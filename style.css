@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(181,216,204);
+    background: radial-gradient(circle, rgba(181,216,204,1) 0%, rgba(114,225,209,1) 50%, rgba(0,212,255,1) 100%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header {
+    background: #1C3144;
+    width: 100%;
+    padding: 25px 100px;
+    color: aliceblue;
+    font-size: 2em;
+
+}
+
+header h1 {
+    text-align: center;
+}
+
+
+header button {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    border: none;
+    position: absolute;
+    top: 1.3%;
+    right: 5%;
+    color: rgb(39, 39, 39);
+}
+
+header button:hover {
+    color: black;
+}
+
+.wrap {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0px;
+}
+
+.addBookMenu {
+    position: absolute;
+    top: 13.1%;
+    right: 0%;
+    width: 320px;
+    background-color: white;
+    color: #222;
+    border-radius: 0 0 0 15px;
+    padding: 10px;
+    height: 340px;
+    max-height: 340px;
+    transition: max-height 5.5s;
+}
+
+.addBookMenu label {
+    font-size: 0.55em;
+}
+
+.addBookMenu input {
+    font-size: 0.5em;
+    padding: 5px 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: #1C3144 solid 2px;
+}
+
+#readCheck {
+    width: 10%;
+}
+
+#submitBookForm {
+    width: 60%;
+    background-color: #1C3144;
+    color: white;
+    border: none;
+    font-weight: 600;
+    padding: 10px 0;
+    border-radius: 0 0 0 15px;
+}
+
+.bookContainer {
+    display: flex;
+    gap: 25px;
+    width: 1500px;
+    margin: 25px 25px;
+    flex-wrap: wrap;
+}
+
+.bookContainer .bookCard {
+    background-color: #1c31447c;
+    width: 350px;
+    height: 250px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.bookTitle {
+    font-size: 2rem; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bookAuthor , .bookPages {
+    font-size: 1em;
+}
+
+.bookTitle, .bookAuthor, .bookPages {
+    color: white;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap ;
+    overflow: hidden;
+    padding: 5px 10px;
+}
+
+.bookRead {
+    width: 100%; 
+    height: 75px;
+    border: none;
+    border-radius: 0 0 15px 15px;
+    color: rgb(211, 211, 211);
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.bookRead:hover {
+    color: white;
+}
+
+.readTrue {
+    background-color: rgba(43, 255, 0, 0.514);
+}
+
+.readFalse {
+    background-color: rgba(255, 0, 0, 0.514);
+}
+
+.deleteCardButton {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left:140px;
+    color: red;
+    border-radius: 50%;
+    border: none;
+}
